@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="Script.js" async></script>  <!-- Download Script before downloading body-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/">Store</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <h1 class="band-name band-name-large">
+           Leafly
+        </h1>
+    </header>
+    <!-- Section A -->
+    <section class="container content-section">
+        <h2 class="section-header">Sativa</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">MAC</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/generic/strain-19.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/generic/strain-19.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(min-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Gelato</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/generic/strain-12.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/generic/strain-12.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(max-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cheetah Piss</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/generic/strain-12.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/generic/strain-12.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(max-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Captain Jack</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/generic/strain-19.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/generic/strain-19.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(min-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section B -->
+    <section class="container content-section">
+        <h2 class="section-header">Indica</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Pineapple Cookies</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/purple/strain-9.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/purple/strain-9.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(min-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Glueberry</span>
+                <img class="shop-item-image" src="https://images.leafly.com/flower-images/defaults/short-dense-heavy/strain-2.png?auto=compress,format&amp;w=295&amp;dpr=1 1x, https://images.leafly.com/flower-images/defaults/short-dense-heavy/strain-2.png?auto=compress,format&amp;w=295&amp;dpr=2 2x" media="(min-width: 320px)">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section C -->
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Leafly</h3>
+            <ul class="nav footer-nav">
+                <li><a href="https://www.youtube.com"><img src="https://www.madsnailtravel.com/images/youtube.svg" width="30px" height="30px" alt="youtube"></a></li>
+                <li><a href="https://www.spotify.com/tn-fr/"><img src="https://madsnailtravel.com/images/instagram.svg" width="30" height="30" class alt="Spotify" ></a></li>
+                <li><a href="https://www.facebook.com/"><img src="	https://madsnailtravel.com/images/facebook.svg" width="30" height="30" alt="Facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
